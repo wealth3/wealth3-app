@@ -5,6 +5,7 @@ import {
   RainbowKitProvider,
   connectorsForWallets,
 } from "@rainbow-me/rainbowkit";
+import { jsonRpcProvider } from "wagmi/providers/jsonRpc";
 
 import { chain, configureChains, createClient, WagmiConfig } from "wagmi";
 import { alchemyProvider } from "wagmi/providers/alchemy";
@@ -17,8 +18,14 @@ import {
 } from "@rainbow-me/rainbowkit/wallets";
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
-  [alchemyProvider({ apiKey: process.env.ALCHEMY_ID }), publicProvider()]
+  [chain.goerli],
+  [
+    jsonRpcProvider({
+      rpc: () => ({
+        http: `https://goerli.infura.io/v3/48a593ad67094cbf84b0af0d4abba3b9`,
+      }),
+    }),
+  ]
 );
 
 const connectors = connectorsForWallets([
