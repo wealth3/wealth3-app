@@ -8,7 +8,7 @@ export const Layout = ({ children }) => {
         <h1 className="text-black text-3xl font-synco font-bold">Wealth3</h1>
         <ConnectButton />
       </div>
-      <div className="griddie  flex justify-center items-center h-full">
+      <div className="griddie flex justify-center items-center h-full">
         {children}
       </div>
     </div>
