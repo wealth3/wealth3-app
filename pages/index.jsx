@@ -18,7 +18,7 @@ export default function Home() {
           <br />
           You care for your people as for the Ethereum network.
         </span>
-        <Link href="/dashboard">
+        <Link href="/form">
           <a
             href=""
             className="bg-[#FFFF] rounded-lg shadow-lg py-4 text-black w-60 text-center font-synco text-sm text-bold"
