@@ -6,7 +6,7 @@ const Dashboard = () => {
   return (
     <Layout>
       <div className="m-auto col-start-1 col-end-13 row-start-1">
-        <Image src="/images/Group5384.png" className="mt-24" alt="" />
+        <img src="/images/Group5384.png" className="mt-24" alt="" />
       </div>
     </Layout>
   );

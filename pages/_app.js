@@ -31,7 +31,12 @@ const { chains, provider } = configureChains(
 const connectors = connectorsForWallets([
   {
     groupName: "Recommended",
-    wallets: [rainbowWeb3AuthConnector({ chains })],
+    wallets: [
+      rainbowWallet({ chains }),
+      walletConnectWallet({ chains }),
+      metaMaskWallet({ chains }),
+      rainbowWeb3AuthConnector({ chains }),
+    ],
   },
 ]);
 
