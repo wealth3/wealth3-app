@@ -9,8 +9,11 @@ import { ethers } from "ethers";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import Modal from "@mui/material/Modal";
+import { useRouter } from "next/router";
 
 const Form = () => {
+  const router = useRouter();
+
   const style = {
     position: "absolute",
     top: "50%",
@@ -66,6 +69,9 @@ const Form = () => {
     if (tx) {
       setTransaction(tx);
       setExecuted(true);
+      setTimeout(() => {
+        router.push("/dashboard");
+      }, 6000);
     }
 
     console.log("la respuesta de la transaction es ---->>> ", tx);
