@@ -13,7 +13,7 @@ export default function Home() {
           Better safe <br /> than sorry.
         </h2>
         <span className="text-black text-3xl font-synco ">
-          <b>Wealth3</b> is a tool for locked savings that guarantees they won't get
+          <b>Wealth3</b> is a tool for locked savings that guarantees they won&apos;t get
           lost.
           <br />
           You care for your people as for the Ethereum network.
