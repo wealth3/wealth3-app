@@ -20,7 +20,7 @@ a {
 }
 
 .griddie {
-  @apply grid grid-cols-12;
+  @apply grid grid-cols-12 grid-rows-4;
 }
 
 @media (prefers-color-scheme: dark) {
