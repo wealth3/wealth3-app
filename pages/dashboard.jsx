@@ -8,6 +8,7 @@ const Dashboard = () => {
     yearsAmount: 0,
     inactiveTime: 0,
     recipients: [],
+    recipientsPercentage: [],
     amount: 0,
   });
 
@@ -49,9 +50,34 @@ const Dashboard = () => {
         <label className="text-black">
           Which address should receive what porcentage of your funds?
         </label>
-        <AddressPercentage />
-        <AddressPercentage />
-        <AddressPercentage />
+        <div>
+          {[0, 1, 2].map((i) => {
+            return (
+              <AddressPercentage
+                key={i}
+                indi={i}
+                setAddress={(e, i) => {
+                  let recipients = data.recipients;
+                  recipients[i] = e;
+
+                  setData({
+                    ...data,
+                    recipients: recipients,
+                  });
+                }}
+                setAddressPercentage={(e, i) => {
+                  let recipientsPercentage = data.recipientsPercentage;
+                  recipientsPercentage[i] = e;
+
+                  setData({
+                    ...data,
+                    recipientsPercentage: recipientsPercentage,
+                  });
+                }}
+              />
+            );
+          })}
+        </div>
         <label className="text-black">
           Start your fund by suscribing your first Ether
         </label>
