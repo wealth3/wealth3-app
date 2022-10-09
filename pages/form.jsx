@@ -120,7 +120,7 @@ const Form = () => {
           }
         />
         <label className="text-black">
-          Which address should receive what porcentage of your funds?
+          Which address should receive what percentage of your funds?
         </label>
         <div>
           {[0, 1, 2].map((i) => {

@@ -13,7 +13,7 @@ export const rainbowWeb3AuthConnector = ({ chains }) => ({
         clientId:
           "BBtqhb7wdKN5AhTOQX-ayEykDXShf8bMBifX2FQXWgCd57R9rILN3fA2XnBTyMKAFcaTENUKJO5WDT1VZvUqrtc", // Get your own client id from https://dashboard.web3auth.io
         network: "testnet",
-        chainId: "0x1",
+        chainId: "0x5",
       },
     });
     return {
