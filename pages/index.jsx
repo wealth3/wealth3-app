@@ -8,21 +8,22 @@ import Link from "next/link";
 export default function Home() {
   return (
     <Layout>
-      <div className="col-start-2 col-end-6 row-start-2 flex flex-col gap-7">
-        <h2 className="text-black text-6xl font-synco font-bold">
-          Welcome <br /> to <br /> wealth 3
+      <div className="col-start-1 col-end-9 row-start-3 flex flex-col gap-8">
+        <h2 className="text-black text-8xl font-synco font-bold">
+          Better safe <br /> than sorry.
         </h2>
-        <span className="text-black text-xl font-synco font-bold">
-          Protect your funds and future while securing the network
+        <span className="text-black text-3xl font-synco ">
+          Wealth3 is a tool for locked savings that guarantees they won't get
+          lost.
+          <br />
+          You care for your people as for the Ethereum network.
         </span>
-      </div>
-      <div className="col-start-6 col-end-8 row-start-5 flex justify-center items-center">
         <Link href="/dashboard">
           <a
             href=""
-            className="bg-[#FEAEA5] rounded-lg shadow-lg px-6 py-4 text-black text-xl"
+            className="bg-[#FFFF] rounded-lg shadow-lg py-4 text-black w-60 text-center font-synco text-sm text-bold"
           >
-            Deposit!
+            Secure your assets!
           </a>
         </Link>
       </div>
